@@ -2,5 +2,13 @@
 @import '_variables';
 @import 'modules/hello.scss';
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
