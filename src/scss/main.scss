@@ -12,3 +12,154 @@ body {
   font-family: 'Nunito', sans-serif;
   font-family: 'Roboto Mono', monospace;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+.mailme-btn {
+  background-color: $color-text-link;
+  color: $color-white;
+  width: 27.8rem;
+  height: 4.8rem;
+  border-radius: 6.4rem;
+  cursor: pointer;
+  margin: 4.8rem auto 8.8rem;
+  padding: 0.4rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.heading-secondary {
+  display: block;
+  font-family: 'Nunito', sans-serif;
+  font-size: 3.6rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 6.4rem 1.6rem;
+  margin: 0;
+
+  &--white {
+    color: $color-white;
+  }
+}
+
+.hello {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  align-content: space-around;
+  justify-content: center;
+  font-family: 'Nunito', sans-serif;
+
+  &__img {
+    display: inline-block;
+    width: 9.6rem;
+    height: 9.6rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 1.6rem solid $color-blue-lightest;
+  }
+
+  &__greeting {
+    display: none;
+  }
+
+  &__description {
+    font-size: 2.6rem;
+    margin: 0 1.6rem;
+    text-align: center;
+    color: $color-text-dark;
+
+    &--blue {
+      color: $color-blue;
+    }
+  }
+
+  &__message {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 3.2rem;
+    color: $color-text-default;
+    margin: 1.6rem;
+    text-align: center;
+
+    &--link {
+      font-weight: bold;
+      text-decoration: none;
+      color: $color-text-link;
+    }
+  }
+}
+
+.skills {
+  background-color: $color-blue;
+  display: grid;
+  justify-content: center;
+  font-family: 'Nunito', sans-serif;
+
+  &__container {
+    width: 28.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__container:not(:first-of-type) {
+    margin-top: 6.4rem;
+  }
+
+  &__emoji {
+    font-size: 6.4rem;
+    align-self: center;
+  }
+
+  &__h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: $color-white;
+    align-self: center;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 2.4rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &__item {
+      list-style-type: none;
+      color: $color-blue-light;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 3.2rem;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 34%;
+        left: -2.4rem;
+        width: 12px;
+        height: 9px;
+      }
+
+      &--green:before {
+        background: url(../assets/img/small-tick-green.svg);
+      }
+      &--white:before {
+        background: url(../assets/img/small-tick-white.svg);
+      }
+      &--bullet:before {
+        background: url(../assets/img/bullet.svg);
+        border-radius: 50%;
+      }
+    }
+  }
+}

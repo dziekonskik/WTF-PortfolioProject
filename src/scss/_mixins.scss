@@ -1,0 +1,30 @@
+/*
+0 - 600 px => phone
+600px - 900px => tablet portrait 
+900px - 1200px => tablet landscape
+1200px - 1800px ### regular styles
+1800px+ => big desktop
+*/
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet-portrait {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet-landscape {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
