@@ -1,5 +1,6 @@
 @import '~normalize.css';
 @import '_variables';
+@import '_mixins';
 @import 'modules/hello.scss';
 
 *,
@@ -46,6 +47,11 @@ html {
   &--white {
     color: $color-white;
   }
+
+  &--dark {
+    color: $color-text-dark;
+    padding-bottom: 3.2rem;
+  }
 }
 
 .hello {
@@ -81,12 +87,7 @@ html {
   }
 
   &__message {
-    font-size: 1.6rem;
-    font-weight: 300;
-    line-height: 3.2rem;
-    color: $color-text-default;
-    margin: 1.6rem;
-    text-align: center;
+    @include message;
 
     &--link {
       font-weight: bold;
@@ -161,5 +162,13 @@ html {
         border-radius: 50%;
       }
     }
+  }
+}
+
+.projects {
+  font-family: 'Nunito', sans-serif;
+
+  &__message {
+    @include message;
   }
 }

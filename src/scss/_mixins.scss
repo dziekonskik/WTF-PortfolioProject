@@ -28,3 +28,12 @@
     }
   }
 }
+
+@mixin message {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 3.2rem;
+  color: $color-text-default;
+  margin: 1.6rem;
+  text-align: center;
+}
