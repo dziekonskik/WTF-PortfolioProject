@@ -1,0 +1,9 @@
+.contact {
+  display: grid;
+  font-family: 'Nunito', sans-serif;
+  background-color: $color-blue-light;
+
+  &__message {
+    @include message;
+  }
+}

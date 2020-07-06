@@ -1,0 +1,8 @@
+.projects {
+  font-family: 'Nunito', sans-serif;
+  display: grid;
+
+  &__message {
+    @include message;
+  }
+}

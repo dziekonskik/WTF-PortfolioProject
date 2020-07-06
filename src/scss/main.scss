@@ -2,6 +2,9 @@
 @import '_variables';
 @import '_mixins';
 @import 'modules/hello.scss';
+@import 'modules/skills.scss';
+@import 'modules/projects.scss';
+@import 'modules/contact.scss';
 
 *,
 *::before,
@@ -51,124 +54,5 @@ html {
   &--dark {
     color: $color-text-dark;
     padding-bottom: 3.2rem;
-  }
-}
-
-.hello {
-  display: grid;
-  grid-template-columns: 1fr;
-  height: 100vh;
-  align-content: space-around;
-  justify-content: center;
-  font-family: 'Nunito', sans-serif;
-
-  &__img {
-    display: inline-block;
-    width: 9.6rem;
-    height: 9.6rem;
-    border-radius: 50%;
-    margin: 0 auto;
-    border: 1.6rem solid $color-blue-lightest;
-  }
-
-  &__greeting {
-    display: none;
-  }
-
-  &__description {
-    font-size: 2.6rem;
-    margin: 0 1.6rem;
-    text-align: center;
-    color: $color-text-dark;
-
-    &--blue {
-      color: $color-blue;
-    }
-  }
-
-  &__message {
-    @include message;
-
-    &--link {
-      font-weight: bold;
-      text-decoration: none;
-      color: $color-text-link;
-    }
-  }
-}
-
-.skills {
-  background-color: $color-blue;
-  display: grid;
-  justify-content: center;
-  font-family: 'Nunito', sans-serif;
-
-  &__container {
-    width: 28.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  &__container:not(:first-of-type) {
-    margin-top: 6.4rem;
-  }
-
-  &__emoji {
-    font-size: 6.4rem;
-    align-self: center;
-  }
-
-  &__h3 {
-    font-size: 2.4rem;
-    font-weight: bold;
-    color: $color-white;
-    align-self: center;
-  }
-
-  &__list {
-    padding: 0;
-    margin: 2.4rem 1.6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    &__item {
-      list-style-type: none;
-      color: $color-blue-light;
-      font-size: 1.6rem;
-      font-weight: 600;
-      line-height: 3.2rem;
-      position: relative;
-
-      &:before {
-        content: '';
-        position: absolute;
-        top: 34%;
-        left: -2.4rem;
-        width: 12px;
-        height: 9px;
-      }
-
-      &--green:before {
-        background: url(../assets/img/small-tick-green.svg);
-      }
-      &--white:before {
-        background: url(../assets/img/small-tick-white.svg);
-      }
-      &--bullet:before {
-        background: url(../assets/img/bullet.svg);
-        border-radius: 50%;
-      }
-    }
-  }
-}
-
-.projects {
-  font-family: 'Nunito', sans-serif;
-
-  &__message {
-    @include message;
   }
 }

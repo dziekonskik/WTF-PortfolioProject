@@ -1,0 +1,67 @@
+.skills {
+  background-color: $color-blue;
+  display: grid;
+  justify-content: center;
+  font-family: 'Nunito', sans-serif;
+
+  &__container {
+    width: 28.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__container:not(:first-of-type) {
+    margin-top: 6.4rem;
+  }
+
+  &__emoji {
+    font-size: 6.4rem;
+    align-self: center;
+  }
+
+  &__h3 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: $color-white;
+    align-self: center;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 2.4rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &__item {
+      list-style-type: none;
+      color: $color-blue-light;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 3.2rem;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 34%;
+        left: -2.4rem;
+        width: 12px;
+        height: 9px;
+      }
+
+      &--green:before {
+        background: url(../assets/img/small-tick-green.svg);
+      }
+      &--white:before {
+        background: url(../assets/img/small-tick-white.svg);
+      }
+      &--bullet:before {
+        background: url(../assets/img/bullet.svg);
+        border-radius: 50%;
+      }
+    }
+  }
+}
