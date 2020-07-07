@@ -6,4 +6,24 @@
   &__message {
     @include message;
   }
+
+  &__socilmedia-container {
+    display: flex;
+    justify-content: space-between;
+    width: 19.2rem;
+    height: 4.8rem;
+    margin: 0 auto;
+  }
+
+  &__socilmedia-link {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__socilmedia-icon {
+    width: 4.8rem;
+    height: 4.8rem;
+    background-color: $color-white;
+    border: 1.2rem solid $color-white;
+  }
 }
