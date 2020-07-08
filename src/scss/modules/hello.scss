@@ -34,14 +34,17 @@
       font-weight: bold;
       color: $color-white;
       position: absolute;
-      top: 9%;
+      top: 7%;
       left: calc(50% + 89px);
 
       &::before {
         content: '';
+        display: inline-block;
         position: absolute;
-        bottom: 0;
-        left: 30%;
+        width: 2rem;
+        height: 2rem;
+        bottom: -1.8rem;
+        left: 2rem;
         background: url('../assets/img/Speech_cloud.svg');
       }
     }
@@ -50,6 +53,7 @@
   &__text-block {
     @media (min-width: 950px) {
       width: 70%;
+      height: 30rem;
       margin: 0 auto;
       position: relative;
 
@@ -57,9 +61,13 @@
         content: '';
         display: block;
         position: absolute;
+        width: 6rem;
+        height: 100%;
         top: 0;
-        left: 100%;
+        left: 0;
         background: url('../assets/img/bracket-left.svg');
+        background-size: cover;
+        z-index: 10;
       }
     }
   }

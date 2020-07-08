@@ -24,7 +24,7 @@ fetch(url)
       <main class="github__main">
         <img
           class="github__main__image"
-          src="../assets/img/github-white.svg"
+          src="img/github-white.svg"
           alt="github logo"
         />
         <article class="github__main__text-container">
