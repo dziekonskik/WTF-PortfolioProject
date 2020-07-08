@@ -47,19 +47,22 @@ fetch(url)
           <p class="github__main__text github__main__text-container--left">
             demo:
           </p>
-          <a
+          <span class="github__main__text"><<a
             class="github__main__link github__main__text-container--right github__main__text--js"
             href="${homepage}"
-            >< see here ></a
-          >
-          <span class="github__main__text github__main__text-container--left">
-            github:
+            target="_blank"
+            >see here</a
+          >>
           </span>
-          <a
+          <p class="github__main__text github__main__text-container--left">
+            github:
+          </p>
+          <span class="github__main__text"><<a
             class="github__main__link github__main__text-container--right github__main__text--js"
             href="${html_url}"
-            >< source code ></a
-          >
+            target="_blank"
+            >source code</a
+          >></span>
         </article>
       </main>
     </div>`;

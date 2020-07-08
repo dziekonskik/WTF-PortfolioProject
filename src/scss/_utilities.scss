@@ -7,6 +7,10 @@
   text-align: center;
 }
 
+@mixin font-size($size) {
+  font-size: $size + rem;
+}
+
 @keyframes greet {
   0% {
     transform: rotate(0deg);
@@ -22,4 +26,58 @@
 .animate {
   display: inline-block;
   animation: greet 2s linear infinite;
+}
+
+.mailme-btn {
+  background-color: $color-text-link;
+  color: $color-white;
+  width: 27.8rem;
+  height: 4.8rem;
+  border-radius: 6.4rem;
+  cursor: pointer;
+  margin: 4.8rem auto 8.8rem;
+  padding: 0.4rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: box-shadow 0.2s linear;
+
+  @media (min-width: 950px) {
+    box-shadow: $bs-normal;
+
+    &:hover {
+      box-shadow: $bs-hover;
+    }
+    &:active {
+      box-shadow: none;
+    }
+  }
+}
+
+.heading-secondary {
+  display: block;
+  font-family: 'Nunito', sans-serif;
+  font-size: 3.6rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 6.4rem 1.6rem;
+  margin: 0;
+
+  &--white {
+    color: $color-white;
+  }
+
+  &--dark {
+    color: $color-text-dark;
+    padding-bottom: 3.2rem;
+  }
+}
+
+.no-margin {
+  @media (min-width: 950px) {
+    margin: 0;
+  }
 }

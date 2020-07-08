@@ -39,16 +39,18 @@
         </h1>
         <p class="hello__message">
           You might be interested in checking the list of
-          <a class="hello__message--link" href="#">my skills</a>. Don't forget
-          to have a glimpse at
-          <a class="hello__message--link" href="#">my projects</a>. Currently
-          I'm looking for a new challanges so if you have one -
-          <a class="hello__message--link" href="">contact me</a> 😊
+          <a class="hello__message--link" href="#skills">my skills</a>. Don't
+          forget to have a glimpse at
+          <a class="hello__message--link" href="#projects">my projects</a>.
+          Currently I'm looking for a new challanges so if you have one -
+          <a class="hello__message--link" href="#contact">contact me</a> 😊
         </p>
       </div>
-      <a href="#" class="mailme-btn">jaseveen@gmail.com</a>
+      <a href="mailto:jaseveen@gmail.com" class="mailme-btn"
+        >jaseveen@gmail.com</a
+      >
     </section>
-    <section class="skills">
+    <section id="skills" class="skills">
       <h2 class="heading-secondary heading-secondary--white">My Skills</h2>
       <div class="skills__wrapper">
         <article class="skills__container">
@@ -108,6 +110,9 @@
               React JS
             </li>
             <li class="skills__list__item skills__list__item--bullet">
+              SVG animations
+            </li>
+            <li class="skills__list__item skills__list__item--bullet">
               React Native
             </li>
             <li class="skills__list__item skills__list__item--bullet">
@@ -131,14 +136,11 @@
             <li class="skills__list__item skills__list__item--bullet">
               Flutter
             </li>
-            <li class="skills__list__item skills__list__item--bullet">
-              SVG animations
-            </li>
           </ul>
         </article>
       </div>
     </section>
-    <section class="projects">
+    <section id="projects" class="projects">
       <h2 class="heading-secondary heading-secondary--dark">
         Recent Projects
       </h2>
@@ -148,38 +150,45 @@
       </p>
       <div class="projects__cards projects--js"></div>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
       <h2 class="heading-secondary heading-secondary--dark">Contact me</h2>
       <p class="contact__message">
         I’m open for new opportunities. If you have one for me we should talk!
       </p>
-      <div class="contact__socilmedia-container">
-        <a
-          class="contact__socilmedia-link"
-          href="https://github.com/dziekonskik"
-          ><img
-            class="contact__socilmedia-icon"
-            src="../assets/img/github.svg"
-            alt="github icon"
-        /></a>
-        <a
-          class="contact__socilmedia-link"
-          href="https://www.instagram.com/jaseveen77/"
-          ><img
-            class="contact__socilmedia-icon"
-            src="../assets/img/instagram.svg"
-            alt="instagram icon"
-        /></a>
-        <a
-          class="contact__socilmedia-link"
-          href="https://www.linkedin.com/in/konrad-dzieko%C5%84ski-9a23291ab/"
-          ><img
-            class="contact__socilmedia-icon"
-            src="../assets/img/linkedin.svg"
-            alt="linkedin icon"
-        /></a>
+      <div class="contact__clickables">
+        <div class="contact__socilmedia-container">
+          <a
+            class="contact__socilmedia-link"
+            href="https://github.com/dziekonskik"
+            target="_blank"
+            ><img
+              class="contact__socilmedia-icon"
+              src="../assets/img/github.svg"
+              alt="github icon"
+          /></a>
+          <a
+            class="contact__socilmedia-link"
+            href="https://www.instagram.com/jaseveen77/"
+            target="_blank"
+            ><img
+              class="contact__socilmedia-icon"
+              src="../assets/img/instagram.svg"
+              alt="instagram icon"
+          /></a>
+          <a
+            class="contact__socilmedia-link"
+            href="https://www.linkedin.com/in/konrad-dzieko%C5%84ski-9a23291ab/"
+            target="_blank"
+            ><img
+              class="contact__socilmedia-icon"
+              src="../assets/img/linkedin.svg"
+              alt="linkedin icon"
+          /></a>
+        </div>
+        <a href="mailto:jaseveen@gmail.com" class="mailme-btn no-margin"
+          >jaseveen@gmail.com</a
+        >
       </div>
-      <a href="#" class="mailme-btn">jaseveen@gmail.com</a>
     </section>
   </body>
 </html>

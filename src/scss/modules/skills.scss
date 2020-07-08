@@ -5,16 +5,14 @@
   font-family: 'Nunito', sans-serif;
 
   @media (min-width: 950px) {
-    justify-content: space-around;
+    height: 100vh;
+    display: block;
   }
 
   &__wrapper {
     @media (min-width: 950px) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      justify-content: space-between;
-      gap: 4rem;
-      margin-bottom: 4rem;
     }
   }
 
@@ -26,7 +24,9 @@
     align-items: flex-start;
 
     @media (min-width: 950px) {
+      width: auto;
       justify-content: stretch;
+      align-items: center;
     }
   }
 

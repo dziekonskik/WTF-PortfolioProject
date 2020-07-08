@@ -2,10 +2,21 @@
   font-family: 'Nunito', sans-serif;
   display: grid;
   grid-auto-rows: auto;
-  gap: 2.4rem;
-  margin-bottom: 3rem;
 
   &__message {
     @include message;
+    margin-bottom: 3.4rem;
+  }
+
+  &__cards {
+    display: grid;
+    gap: 2.4rem 0;
+    margin: 2.4rem 0;
+
+    @media (min-width: 950px) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      margin: 2.4rem 9rem;
+    }
   }
 }
