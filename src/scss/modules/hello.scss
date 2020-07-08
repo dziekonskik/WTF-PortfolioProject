@@ -36,6 +36,14 @@
       position: absolute;
       top: 9%;
       left: calc(50% + 89px);
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        background: url('../assets/img/Speech_cloud.svg');
+      }
     }
   }
 

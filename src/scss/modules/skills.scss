@@ -4,16 +4,37 @@
   justify-content: center;
   font-family: 'Nunito', sans-serif;
 
+  @media (min-width: 950px) {
+    justify-content: space-around;
+  }
+
+  &__wrapper {
+    @media (min-width: 950px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-between;
+      gap: 4rem;
+      margin-bottom: 4rem;
+    }
+  }
+
   &__container {
     width: 28.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    @media (min-width: 950px) {
+      justify-content: stretch;
+    }
   }
 
   &__container:not(:first-of-type) {
     margin-top: 6.4rem;
+    @media (min-width: 950px) {
+      margin-top: 0;
+    }
   }
 
   &__emoji {
