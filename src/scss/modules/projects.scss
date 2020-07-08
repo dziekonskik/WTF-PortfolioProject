@@ -1,6 +1,9 @@
 .projects {
   font-family: 'Nunito', sans-serif;
   display: grid;
+  grid-auto-rows: auto;
+  gap: 2.4rem;
+  margin-bottom: 3rem;
 
   &__message {
     @include message;

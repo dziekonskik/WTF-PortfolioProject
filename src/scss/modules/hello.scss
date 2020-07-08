@@ -13,10 +13,47 @@
     border-radius: 50%;
     margin: 3rem auto 3rem;
     border: 1.6rem solid $color-blue-lightest;
+    position: relative;
+
+    @media (min-width: 950px) {
+      width: 21rem;
+      height: 21rem;
+      margin-top: 7rem;
+    }
   }
 
   &__greeting {
     display: none;
+
+    @media (min-width: 950px) {
+      display: block;
+      background-color: $color-blue;
+      border-radius: 1.6rem;
+      padding: 1.6rem 1.9rem;
+      font-size: 3.2rem;
+      font-weight: bold;
+      color: $color-white;
+      position: absolute;
+      top: 9%;
+      left: calc(50% + 89px);
+    }
+  }
+
+  &__text-block {
+    @media (min-width: 950px) {
+      width: 70%;
+      margin: 0 auto;
+      position: relative;
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        background: url('../assets/img/bracket-left.svg');
+      }
+    }
   }
 
   &__description {
