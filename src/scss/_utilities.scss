@@ -35,7 +35,7 @@
   height: 4.8rem;
   border-radius: 6.4rem;
   cursor: pointer;
-  margin: 4.8rem auto 8.8rem;
+  margin: 4.8rem auto;
   padding: 0.4rem 2.4rem;
   display: flex;
   align-items: center;
@@ -53,6 +53,19 @@
     }
     &:active {
       box-shadow: none;
+    }
+  }
+
+  &--header {
+    @media (min-width: 950px) {
+      margin-bottom: 0;
+      transform: translateY(100%);
+    }
+  }
+
+  &--footer {
+    @media (min-width: 950px) {
+      margin: 0;
     }
   }
 }
@@ -73,11 +86,5 @@
   &--dark {
     color: $color-text-dark;
     padding-bottom: 3.2rem;
-  }
-}
-
-.no-margin {
-  @media (min-width: 950px) {
-    margin: 0;
   }
 }

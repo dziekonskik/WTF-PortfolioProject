@@ -1,7 +1,6 @@
 .hello {
   display: grid;
   grid-template-columns: 1fr;
-  height: 100vh;
   align-content: space-around;
   justify-content: center;
   font-family: 'Nunito', sans-serif;
@@ -11,21 +10,21 @@
     width: 13rem;
     height: 13rem;
     border-radius: 50%;
-    margin: 3rem auto 3rem;
+    margin: 3rem auto;
     border: 1.6rem solid $color-blue-lightest;
     position: relative;
 
-    @media (min-width: 950px) {
+    @media (min-width: 750px) {
       width: 21rem;
       height: 21rem;
-      margin-top: 7rem;
+      margin: 7rem auto;
     }
   }
 
   &__greeting {
     display: none;
 
-    @media (min-width: 950px) {
+    @media (min-width: 750px) {
       display: block;
       background-color: $color-blue;
       border-radius: 1.6rem;
@@ -34,7 +33,7 @@
       font-weight: bold;
       color: $color-white;
       position: absolute;
-      top: 7%;
+      top: 4rem;
       left: calc(50% + 89px);
 
       &::before {
@@ -52,22 +51,31 @@
 
   &__text-block {
     @media (min-width: 950px) {
-      width: 70%;
+      width: 77rem;
       height: 30rem;
       margin: 0 auto;
       position: relative;
+      margin-bottom: 12rem;
 
-      &::before {
+      &::before,
+      &::after {
         content: '';
         display: block;
         position: absolute;
-        width: 6rem;
+        width: 10rem;
         height: 100%;
-        top: 0;
-        left: 0;
+        top: -3rem;
+      }
+
+      &::before {
         background: url('../assets/img/bracket-left.svg');
-        background-size: cover;
-        z-index: 10;
+        background-size: contain;
+        left: -7rem;
+      }
+      &::after {
+        background: url('../assets/img/bracket-right.svg');
+        background-size: contain;
+        right: -7rem;
       }
     }
   }
