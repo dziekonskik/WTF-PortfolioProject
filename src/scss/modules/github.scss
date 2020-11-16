@@ -24,9 +24,9 @@
     background-color: $color-console-gray1;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     height: 4rem;
-    align-self: start;
+    align-self: flex-start;
 
     &__dot-container {
       width: 4rem;

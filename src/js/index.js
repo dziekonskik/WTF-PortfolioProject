@@ -3,14 +3,12 @@ import '../scss/main.scss';
 const url = 'https://api.github.com/users/dziekonskik/repos';
 const projectsContainer = document.querySelector('.projects--js');
 
-console.log(projectsContainer);
-
 fetch(url)
   .then((response) => response.json())
   .then((response) => {
     response.forEach((repository) => {
       const { homepage, description, name, html_url } = repository;
-      if (homepage) {
+      if (description) {
         projectsContainer.innerHTML += ` <div class="github">
       <header class="github__heading">
         <div class="github__heading__dot-container">
